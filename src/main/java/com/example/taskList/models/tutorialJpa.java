@@ -1,4 +1,4 @@
-package com.example.taskList;
+package com.example.taskList.models;
 
 import lombok.*;
 import jakarta.persistence.*;
