@@ -28,8 +28,8 @@ public class TutorialsController {
     private TutorialService TutorialService;
 
     @GetMapping
-    public ArrayList<Tutorials> getUsers() {
-        return this.userService.getUsers();
+    public ArrayList<Tutorials> getTutorials() {
+        return this.userService.getTutorials();
     }
 
     @PostMapping
@@ -52,8 +52,8 @@ public class TutorialsController {
         boolean ok = this.userService.deleteUser(id);
 
         if (ok)
-            return "User with id " + id + " as deleted";
+            return "Tutorial with id " + id + " as deleted";
         else
-            return "Error, we have a problem to deleted user " + id;
+            return "Error, we have a problem to deleted tutorial " + id;
     }
 }
