@@ -34,7 +34,7 @@ public class TutorialsController {
 
     @PostMapping
     public Tutorials saveUser(@RequestBody Tutorials tutorial) {
-        return this.userService.saveUser(tutorial);
+        return this.userService.saveTutorial(tutorial);
     }
 
     @GetMapping(path = "/{id}")
@@ -49,7 +49,7 @@ public class TutorialsController {
 
     @DeleteMapping(path = "/{id}")
     public String deleteById(@PathVariable("id") Long id) {
-        boolean ok = this.userService.deleteUser(id);
+        boolean ok = this.userService.deleteTutorial(id);
 
         if (ok)
             return "Tutorial with id " + id + " as deleted";
