@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_WgSv7p
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -57,3 +58,10 @@ public class Tutorials {
 
  
 }
+=======
+package com.example.taskList.models;
+
+public class Tutorials {
+    
+}
+>>>>>>> .merge_file_mqLHuc
