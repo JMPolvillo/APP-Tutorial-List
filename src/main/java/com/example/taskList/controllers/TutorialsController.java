@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.taskList.models.Tutorials;
-import com.example.taskList.service.TutorialService;
+import com.example.taskList.service.TutorialService;//modificar el service
 
 @RestController
 @RequestMapping("/tutorial")
@@ -29,27 +29,27 @@ public class TutorialsController {
 
     @GetMapping
     public ArrayList<Tutorials> getTutorials() {
-        return this.userService.getTutorials();
+        return this.userService.getTutorials();//modificar el service
     }
 
     @PostMapping
     public Tutorials saveUser(@RequestBody Tutorials tutorial) {
-        return this.userService.saveTutorial(tutorial);
+        return this.userService.saveTutorial(tutorial);//modificar el service
     }
 
     @GetMapping(path = "/{id}")
     public Optional<Tutorials> getUserById(@PathVariable("id") Long id) {
-        return this.userService.getById(id);
+        return this.userService.getById(id); //modificar el service
     }
 
     @PutMapping
     public Tutorials updateTutorial(@RequestBody Tutorials tutorial) {
-        return this.userService.updateById(tutorial);
+        return this.userService.updateById(tutorial); //modificar el service
     }
 
     @DeleteMapping(path = "/{id}")
     public String deleteById(@PathVariable("id") Long id) {
-        boolean ok = this.userService.deleteTutorial(id);
+        boolean ok = this.userService.deleteTutorial(id);//modificar el service
 
         if (ok)
             return "Tutorial with id " + id + " as deleted";
