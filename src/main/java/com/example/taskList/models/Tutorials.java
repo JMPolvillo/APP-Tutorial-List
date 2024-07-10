@@ -57,10 +57,8 @@ public class Tutorials {
 
  
 }
-=======
 package com.example.taskList.models;
 
 public class Tutorials {
     
 }
->>>>>>> .merge_file_mqLHuc
