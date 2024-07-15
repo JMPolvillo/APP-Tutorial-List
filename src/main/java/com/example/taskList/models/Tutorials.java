@@ -56,11 +56,3 @@ public class Tutorials {
     public void setTitle(String title) {
         this.title = title;
     }
-
- 
-}
-package com.example.taskList.models;
-
-public class Tutorials {
-    
-}
